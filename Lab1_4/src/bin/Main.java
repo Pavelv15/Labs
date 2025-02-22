@@ -41,8 +41,6 @@ public class Main {
     }
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-        int a = 3;
-        int b = 6;
 
         Long t1 = System.currentTimeMillis();
         double r = multiThread(Math::sin,0,Math.PI/2);
