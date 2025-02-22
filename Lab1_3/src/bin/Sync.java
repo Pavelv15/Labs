@@ -3,11 +3,7 @@ package bin;
 public class Sync {
     private volatile double x = 1;
     private volatile boolean phase = true;
-    Sync() {
-         boolean p = phase;
-          double xOut = x;
 
-    }
 
     public double getX() {
         return x;
