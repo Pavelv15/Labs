@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Main {
     public static final String DRIVER_NAME = "com.mysql.jdbc.Driver";
-    public  static final String CONNECTION_STRING  = "jdbc:mysql://localhost:3306/web?user=root&password=Lolk@$01";
+    public  static final String CONNECTION_STRING  = "jdbc:mysql://localhost:3306/web?user=**&password=**";
     public static void main(String[] args) throws ClassNotFoundException {
         Class.forName(DRIVER_NAME);
         try (Connection connection = DriverManager.getConnection(CONNECTION_STRING)){
