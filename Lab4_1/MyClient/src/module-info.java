@@ -1,0 +1,5 @@
+module MyClient {
+    requires module;
+
+
+}
