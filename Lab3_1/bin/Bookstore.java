@@ -25,8 +25,10 @@ public class Bookstore {
 
         double avgPrice =  books.stream().mapToInt(book -> book.price()).average().getAsDouble();
         System.out.println("Средняя цена за книгу " + avgPrice);
-
-
+        System.out.print("Самая дешевая книга : ");
+        books.stream().filter(book -> book.price() == minPrice).map(book -> book.name()).forEach(System.out::println);
+        System.out.print("Самая дорогая  книга : ");
+        books.stream().filter(book -> book.price() == maxPrice).map(book -> book.name()).forEach(System.out::println);
 
      }
 
